@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="fr">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Lucas Jardins</title>
+        <link rel="stylesheet" href="style.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Aclonica&display=swap" rel="stylesheet">
+        <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+    </head>
+    <body>
+        <header>
+            <nav>
+                <div class="logo">
+                    <img src="photos site/logo-removebg.png" alt="logo">
+                </div>
+                <ul>
+                    <li><a href="#">ACCUEIL</a></li>
+                    <li><a href="#">À PROPOS</a></li>
+                    <li><a href="#">NOS SERVICES</a></li>
+                    <li><a href="#">CONTACT</a></li>
+                </ul>
+            </nav>
+        </header>
+        <section id="bandeau">
+            <div class="slider">
+                <input type="radio" name="slider" id="img1" checked>
+                <input type="radio" name="slider" id="img2">
+                <input type="radio" name="slider" id="img3">
+
+            <div class="bandeau">
+
+                <div class="slide">
+                    <img src="photos site/jardin1.jpg" alt="image1">
+                    <div class="texte">
+                        <span class="lucas animationtexte">Lucas</span>
+                        <br>
+                        <span class="jardins animationdelai">Jardins</span>
+                    </div>
+                    <div class="transparence"></div>
+                </div>
+
+                <div class="slide">
+                    <img src="photos site/plante.jpg" alt="image2">
+                    <div class="texte">
+                        <span class="noussublimons animationtexte">Nous Sublimons</span>
+                        <br>
+                        <span class="vosespaces animationdelai">Vos Espaces</span>
+                    </div>
+                    <div class="transparence"></div>
+                </div>
+
+                <div class="slide">
+                    <img src="photos site/arroseur.jpg" alt="image3">
+                    <div class="texte">
+                        <span class="conseils animationtexte">Conseils &</span>
+                        <br>
+                        <span class="accompagnement animationdelai">Accompagnement</span>
+                    </div>
+                    <div class="transparence"></div>
+                </div>
+            </div>
+
+            <div class="controles">
+                <label for="img1"></label>
+                <label for="img2"></label>
+                <label for="img3"></label>
+            </div>
+        </div>
+        <script>
+            let currentSlide = 1; 
+          
+            function autoChangeSlide() {
+              currentSlide++;
+              if (currentSlide > 3) {
+                currentSlide = 1; 
+              }
+          
+              document.getElementById(`img${currentSlide}`).checked = true;
+            }
+          
+            setInterval(autoChangeSlide, 10000);
+          </script>
+    </section>
+       
+    </body>
+
+
+
+</html>
