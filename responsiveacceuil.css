@@ -1,0 +1,103 @@
+body, html {
+    font-family: 'Aclonica', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.menu {
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+.grilleconteneur {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);  
+    gap: 20px;
+}
+
+/* Responsive pour mobile et tablette */
+@media only screen and (max-width: 768px) {
+    .grilleconteneur {
+        grid-template-columns: 1fr 1fr;  
+    }
+
+    .texteconteneur {
+        text-align: center;
+    }
+
+    .bienvenue {
+        font-size: 22px;
+    }
+
+    .titre {
+        font-size: 30px;
+    }
+
+    .sous-titre {
+        font-size: 20px;
+    }
+
+    .description {
+        font-size: 16px;
+    }
+
+    .citation {
+        font-size: 16px;
+    }
+
+    nav ul {
+        display: flex;
+        flex-direction: column;  
+        align-items: center;
+    }
+
+    nav ul li {
+        margin: 10px 0;
+    }
+
+    .slide img {
+        width: 100%;
+        height: auto;
+    }
+
+    .footer-conteneur {
+        padding: 20px;
+    }
+
+    .footer-contenu .gauche, .footer-contenu .droite {
+        text-align: center;
+    }
+
+    .footer-contenu .centre {
+        margin: 10px 0;
+    }
+
+    .formulaire input, .formulaire textarea {
+        width: 100%;
+        margin: 10px 0;
+    }
+}
+
+@media only screen and (max-width: 480px) {
+    
+    .grilleconteneur {
+        grid-template-columns: 1fr;  
+    }
+
+    .titre, .sous-titre {
+        font-size: 24px;
+    }
+
+    .description {
+        font-size: 14px;
+    }
+
+    .footer-conteneur {
+        padding: 20px;
+    }
+
+    .footer-contenu {
+        display: block;
+        text-align: center;
+    }
+}
