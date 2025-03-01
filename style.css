@@ -190,3 +190,90 @@ nav ul li a:hover, nav ul li a.active {
     animation: none;
 }
 
+/*Début de présentation*/
+.presentation {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 50px;
+    max-width: 1200px;
+    margin: auto;
+    gap: 40px;
+}
+
+.imageconteneur img {
+    width: 100%;
+    max-width: 500px;
+    border-radius: 10px;
+    box-shadow: 2px 2px 10px rgb(0, 0, 0, 0.2);
+}
+
+.texteconteneur {
+    flex: 1;
+    text-align: left;
+    animation: fadeIn 1.5s ease-in-out;
+}
+
+.bienvenue {
+    font-family: "Aclonica", sans-serif;
+    font-size: 24px;
+    color: #7ea04d;
+    font-style: italic;
+    opacity: 0;
+    animation: slideDown 1s ease-in-out forwards;
+}
+
+.bienvenue span {
+    font-weight: bold;
+}
+
+.titre {
+    font-size: 40px;
+    font-weight: bold;
+    opacity: 0;
+    animation: fadeIn 1.5s ease-in-out forwards 0.5s;
+}
+
+.sous-titre {
+    font-size: 24px;
+    color: #666;
+    margin-bottom: 15px;
+    opacity: 0;
+    animation: fadeIn 1.5s ease-in-out forwards 1s;
+}
+
+.description {
+    font-size: 18px;
+    color: #444;
+    opacity: 0;
+    animation: fadeIn 1.5s ease-in-out forwards 1.5s;
+}
+
+.citation {
+    font-size: 18px;
+    font-weight: bold;
+    color: #333;
+    margin-top: 15px;
+    opacity: 0;
+    animation: fadeIn 1.5s ease-in-out forwards 2s;
+}
+
+@keyframes slideDown {
+    from {
+        transform: translateY(-20px);
+        opacity: 0;
+    }
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
